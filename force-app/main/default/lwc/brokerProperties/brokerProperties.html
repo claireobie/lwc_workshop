@@ -1,0 +1,50 @@
+<template>
+    <lightning-card title="Pre-listing Properties" icon-name="custom:custom85">
+        <div class="slds-m-around_medium">
+            <ul class="slds-list_vertical slds-has-dividers_top-space">
+                <template for:each={prelistProperties} for:item="item" if:true={prelistProperties}>
+                        <li key={item.Id}
+                            class="slds-list__item">
+                            <c-broker-property item={item}></c-broker-property>
+                        </li>
+                    </template>
+</ul>
+</div>
+</lightning-card>
+<lightning-card title="Listed Properties" icon-name="custom:custom85">
+    <div class="slds-m-around_medium">
+        <ul class="slds-list_vertical slds-has-dividers_top-space">
+            <template for:each={listedProperties} for:item="item" if:true={listedProperties}>
+                        <li key={item.Id}
+                            class="slds-list__item">
+                            <c-broker-property item={item}></c-broker-property>
+                        </li>
+                    </template>
+        </ul>
+    </div>
+</lightning-card>
+<lightning-card title="Under Contract Properties" icon-name="custom:custom85">
+    <div class="slds-m-around_medium">
+        <ul class="slds-list_vertical slds-has-dividers_top-space">
+            <template for:each={underContractProperties} for:item="item" if:true={underContractProperties}>
+                        <li key={item.Id}
+                            class="slds-list__item">
+                            <c-broker-property item={item}></c-broker-property>
+                        </li>
+                    </template>
+        </ul>
+    </div>
+</lightning-card>
+<lightning-card title="Sold Properties" icon-name="custom:custom85">
+    <div class="slds-m-around_medium">
+        <ul class="slds-list_vertical slds-has-dividers_top-space">
+            <template for:each={soldProperties} for:item="item" if:true={soldProperties}>
+                        <li key={item.Id}
+                            class="slds-list__item">
+                            <c-broker-property item={item}></c-broker-property>
+                        </li>
+                    </template>
+        </ul>
+    </div>
+</lightning-card>
+</template>

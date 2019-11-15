@@ -1,7 +1,35 @@
 {
-  "compilerOptions": {
-    "experimentalDecorators": true,
-    "baseUrl": ".",
-    "paths": {}
-  }
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/greeting": [
+                "greeting/greeting.js"
+            ],
+            "c/helloWorld": [
+                "helloWorld/helloWorld.js"
+            ],
+            "c/similarProperties": [
+                "similarProperties/similarProperties.js"
+            ],
+            "c/similarProperty": [
+                "similarProperty/similarProperty.js"
+            ],
+            "c/brokerProperties": [
+                "brokerProperties/brokerProperties.js"
+            ],
+            "c/brokerProperty": [
+                "brokerProperty/brokerProperty.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
 }
